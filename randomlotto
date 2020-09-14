@@ -1,0 +1,29 @@
+#include <iostream>
+#include<time.h>
+using namespace std ;
+int main() {
+    int a , b ;
+      srand (time(NULL));
+    
+ b = 1+rand() % 20 ;
+ 
+ do{
+     std::cout << "Enter luckynumber 1 (1-20):" ;
+      std::cin>> a ;
+       
+          if(a>20){
+
+            cout<<"1-20 input again"<< endl ;
+          }
+          if(a==b){
+              
+              std::cout << "Lucky!!!!!!..You got 1,000,000 bath"<<endl ;
+          }
+          else
+             std::cout << "This is wrong number" <<endl;
+ 
+ }
+  while(a!=b) ;
+
+    return 0;
+}
